@@ -1,0 +1,112 @@
+/**
+ * Styles for the page body, main content container, 
+* headings, task input, task list, and task items.
+*
+* Sets up gradient backgrounds, animations, flexbox layout,
+* and basic styling for the task tracker interface.
+*/
+.container {
+  background: linear-gradient(to right, #E3CAA5, #B3A492);
+}
+
+@keyframes slide {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  animation: slide 5s ease infinite;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  /* background-color: #DADDB1; */
+  /* background: hsla(64, 39%, 78%, 1); */
+  background-image: linear-gradient(to right, #e3caa5, #efbba4, #f2adaf, #e8a5c3, #cba3d8, #c7a0d4, #c29ed0, #be9bcc, #ce97b2, #cd9a9c, #c29f92, #b3a492);
+
+
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #B3A492;
+  border-radius: 5px;
+  background-color: #E3CAA5;
+}
+
+h1 {
+  text-align: center;
+  /* color:#00ADB5 ; */
+  background: #051937;
+  background: linear-gradient(to right, #051937 50%, #7aa029 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2em;
+  font-weight: 700;
+
+
+
+
+}
+
+h1 {
+  animation: hu__hu__ infinite 2s ease-in-out
+}
+
+@keyframes hu__hu__ {
+  50% {
+    transform: translateY(30px)
+  }
+}
+
+
+.task-input {
+  width: 100%;
+  padding: 9px;
+  margin-bottom: 10px;
+  border: 1px solid #3A4D39
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+  color: #112D4E;
+}
+
+
+.task-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.task-item input[type="checkbox"] {
+  margin-right: 10px;
+  color: #776B5D;
+}
+
+.task-item label {
+  flex-grow: 1;
+}
+
+.task-item button {
+  background-color: #776B5D;
+  color: #EBE3D5;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
